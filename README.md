@@ -12,7 +12,7 @@ Error at line 2/5: ORA-42399: cannot perform a DML operation on a read-only view
 Because I was trying to update a view that was set to read only. 
 
 ### Why are DML operations restricted in some views?
-DML operations are resturcted in some views because they violate constraints, are set to read only, or when a join or group function is included. This is because the database can't apply changes to the underlying base tables.
+DML operations are resturcted in some views because they violate constraints, are set to read only, or when a join or group function is included. This is because the database can't apply changes to the base tables.
 
 ### How is a materialized view different from a regular view?
 A materialized view physically stores query results which leads to faster performance but must be refreshed often. A regular view is virtual and it shows live data from base tables each time it’s queried.
